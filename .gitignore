@@ -1,0 +1,26 @@
+# Claude
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Ferramental de TERCEIROS — baixado a parte, nao incluido neste repo
+orbit-wars/
+
+# Ambiente de treino (GPU) — recriar via rl/requirements-gpu.txt
+.venv
+.venv/
+
+# Repo separado de um bot oponente usado em avaliacao
+dias/
+
+# Artefatos gerados (replays/logs)
+*.html
+*.log
+
+# Documentacao .md (mantem o README da raiz e a doc do pipeline de RL)
+*.md
+!/README.md
+!/rl/GPU_WSL.md

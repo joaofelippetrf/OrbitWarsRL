@@ -1,0 +1,13 @@
+# Treino na GPU (Linux ou WSL2/Ubuntu). Instale DENTRO do WSL, num venv.
+#   python3 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements-gpu.txt
+#
+# IMPORTANTE (WSL): NAO instale driver NVIDIA dentro do WSL. O CUDA do WSL usa
+# o driver do Windows host. Instale apenas o driver NVIDIA mais recente no
+# Windows; o jax[cuda12] abaixo traz as libs CUDA via pip.
+
+jax[cuda12]
+flax
+optax
+numpy
+kaggle-environments>=1.28.0
